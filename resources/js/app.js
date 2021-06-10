@@ -30,7 +30,7 @@ Vue.component('chat-component', require('./views/Chat.vue').default);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
- var appID = "345319183127b22";
+ var appID = "APP_ID";
  var region = "us";
  var appSetting = new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(region).build();
  CometChat.init(appID, appSetting).then(

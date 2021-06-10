@@ -56,7 +56,7 @@
                 }
             },
             logUserInToCometChat() {
-                    var AUTH_KEY = "63d885dd7d0c2443b7f12c6f8041302335c824f7"
+                    var AUTH_KEY = "AUTH_KEY"
                     CometChat.login(this.username,AUTH_KEY).then(
                                 data => {
                                     console.log(data)

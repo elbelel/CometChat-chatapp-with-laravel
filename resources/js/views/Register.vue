@@ -73,7 +73,7 @@ import { CometChat } from "@cometchat-pro/chat";
             },
 
             async createUserOnCometChat() {
-                const AUTH_KEY = "63d885dd7d0c2443b7f12c6f8041302335c824f7";
+                const AUTH_KEY = "AUTH_KEY";
                 const UID = this.username
                 
                 var user = new CometChat.User(UID);
