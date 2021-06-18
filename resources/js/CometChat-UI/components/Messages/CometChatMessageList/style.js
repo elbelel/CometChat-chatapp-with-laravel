@@ -6,6 +6,7 @@ export const chatListStyle = (theme) => {
     flex: "1 1 0",
     order: "2",
     position: "relative",
+    height:"400px"
   };
 };
 
@@ -17,7 +18,7 @@ export const listWrapperStyle = () => {
     height: "100%",
     overflowX: "hidden",
     overflowY: "scroll",
-    position: "absolute",
+    // position: "absolute",
     top: "0",
     transition: "background .3s ease-out .1s",
     width: "100%",
