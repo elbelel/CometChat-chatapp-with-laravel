@@ -26,6 +26,7 @@
 
 <script>
     import { CometChat } from "@cometchat-pro/chat";
+    import {AUTH_KEY} from "../constant/constant"
     export default {
         data() {
             return {
@@ -56,7 +57,6 @@
                 }
             },
             logUserInToCometChat() {
-                    var AUTH_KEY = "AUTH_KEY"
                     CometChat.login(this.username,AUTH_KEY).then(
                                 data => {
                                     console.log(data)

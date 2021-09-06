@@ -6,7 +6,7 @@
 
 require('./bootstrap');
 import { CometChat } from "@cometchat-pro/chat"
-
+import {APP_ID,REGION} from "./constant/constant"
 
 window.Vue = require('vue').default;
 
@@ -30,10 +30,8 @@ Vue.component('chat-component', require('./views/Chat.vue').default);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
- var appID = "APP_ID";
- var region = "REGION";
- var appSetting = new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(region).build();
- CometChat.init(appID, appSetting).then(
+ var appSetting = new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(REGION).build();
+ CometChat.init(APP_ID, appSetting).then(
    () => {
      console.log("Initialization completed successfully");
      // You can now call login function.

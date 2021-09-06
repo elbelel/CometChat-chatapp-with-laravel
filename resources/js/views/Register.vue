@@ -34,6 +34,8 @@
 <script>
 
 import { CometChat } from "@cometchat-pro/chat";
+import {AUTH_KEY} from "../constant/constant"
+
 
     export default {
         data() {
@@ -73,7 +75,6 @@ import { CometChat } from "@cometchat-pro/chat";
             },
 
             async createUserOnCometChat() {
-                const AUTH_KEY = "AUTH_KEY";
                 const UID = this.username
                 
                 var user = new CometChat.User(UID);
